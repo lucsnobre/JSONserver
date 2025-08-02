@@ -3,7 +3,7 @@
 # Carrossel JSON Server
 
 <p align="center">
-  <strong>Uma experiência visual imersiva para navegação de fotos</strong>
+  <strong>Projeto de volta ás aulas do curso de Desenvolvimento de Sistemas do SENAI Jandira</strong>
 </p>
 
 <p align="center">
