@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x400/1a1a1a/e8e8e8?text=Screenshot+do+Projeto" alt="Screenshot do Carrossel JSON Server" />
+  <img src="./readme/screencapture-127-0-0-1-5500-FrontEnd-2025-08-02-01_45_55.png" alt="Screenshot do Carrossel JSON Server" />
 </p>
 
 <div align="center">
