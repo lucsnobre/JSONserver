@@ -17,7 +17,7 @@ async function carregarFotos() {
     mostrarFotos()
   } catch (erro) {
     console.error(erro)
-    trilhaFotos.innerHTML = `<p class="erro">Não foi possível carregar as fotos 😢</p>`
+    trilhaFotos.innerHTML = `<p class="erro">foto nao fooooooi</p>`
   }
 }
 
@@ -43,8 +43,7 @@ function atualizarCarrossel() {
     }
   })
   
-  // Centralizar o item ativo
-  const deslocamento = -indiceAtual * 33.333 // 33.333% largura por item
+  const deslocamento = -indiceAtual * 33.333 
   trilhaFotos.style.transform = `translateX(${deslocamento}%)`
 }
 
@@ -52,7 +51,6 @@ function voltarFoto() {
   if (indiceAtual > 0) {
     indiceAtual--
   } else {
-    // Loop infinito: vai para a última imagem
     indiceAtual = minhasFotos.length - 1
   }
   atualizarCarrossel()
@@ -62,7 +60,6 @@ function proximaFoto() {
   if (indiceAtual < minhasFotos.length - 1) {
     indiceAtual++
   } else {
-    // Loop infinito: volta para a primeira imagem
     indiceAtual = 0
   }
   atualizarCarrossel()
