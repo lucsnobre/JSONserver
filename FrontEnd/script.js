@@ -1,74 +1,74 @@
 "use strict";
 
-const API_URL = "http://localhost:3000/fotos"; // ajuste se seu json-server rodar em outra porta
+const URL_API = "http://localhost:3000/fotos"
 
-const track = document.getElementById("carousel-track");
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
+const trilhaFotos = document.getElementById("trilha-fotos")
+const botaoAnterior = document.getElementById("botao-anterior")
+const botaoProximo = document.getElementById("botao-proximo")
 
-let index = 0;
-let images = [];
+let indiceAtual = 0
+let minhasFotos = []
 
-async function loadImages() {
+async function carregarFotos() {
   try {
-    const res = await fetch(API_URL);
-    if (!res.ok) throw new Error("Falha ao carregar imagens");
-    images = await res.json();
-    renderImages();
-  } catch (err) {
-    console.error(err);
-    track.innerHTML = `<p class="error">Não foi possível carregar as fotos 😢</p>`;
+    const resposta = await fetch(URL_API)
+    if (!resposta.ok) throw new Error("Falha ao carregar imagens")
+    minhasFotos = await resposta.json()
+    mostrarFotos()
+  } catch (erro) {
+    console.error(erro)
+    trilhaFotos.innerHTML = `<p class="erro">Não foi possível carregar as fotos 😢</p>`
   }
 }
 
-function renderImages() {
-  track.innerHTML = images
+function mostrarFotos() {
+  trilhaFotos.innerHTML = minhasFotos
     .map(
       (foto) => `
-        <div class="carousel-item">
+        <div class="item-foto">
           <img src="${foto.imagem}" alt="${foto.legenda}" />
-          <p class="caption">${foto.legenda}</p>
+          <p class="legenda">${foto.legenda}</p>
         </div>`
     )
-    .join("");
-  updateCarousel();
+    .join("")
+  atualizarCarrossel()
 }
 
-function updateCarousel() {
-  const items = document.querySelectorAll('.carousel-item');
-  items.forEach((item, i) => {
-    item.classList.remove('active');
-    if (i === index) {
-      item.classList.add('active');
+function atualizarCarrossel() {
+  const itensFoto = document.querySelectorAll('.item-foto')
+  itensFoto.forEach((item, i) => {
+    item.classList.remove('ativo')
+    if (i === indiceAtual) {
+      item.classList.add('ativo')
     }
-  });
+  })
   
   // Centralizar o item ativo
-  const offset = -index * 33.333; // 33.333% width per item
-  track.style.transform = `translateX(${offset}%)`;
+  const deslocamento = -indiceAtual * 33.333 // 33.333% largura por item
+  trilhaFotos.style.transform = `translateX(${deslocamento}%)`
 }
 
-function showPrev() {
-  if (index > 0) {
-    index--;
+function voltarFoto() {
+  if (indiceAtual > 0) {
+    indiceAtual--
   } else {
     // Loop infinito: vai para a última imagem
-    index = images.length - 1;
+    indiceAtual = minhasFotos.length - 1
   }
-  updateCarousel();
+  atualizarCarrossel()
 }
 
-function showNext() {
-  if (index < images.length - 1) {
-    index++;
+function proximaFoto() {
+  if (indiceAtual < minhasFotos.length - 1) {
+    indiceAtual++
   } else {
     // Loop infinito: volta para a primeira imagem
-    index = 0;
+    indiceAtual = 0
   }
-  updateCarousel();
+  atualizarCarrossel()
 }
 
-prevBtn.addEventListener("click", showPrev);
-nextBtn.addEventListener("click", showNext);
+botaoAnterior.addEventListener("click", voltarFoto)
+botaoProximo.addEventListener("click", proximaFoto)
 
-document.addEventListener("DOMContentLoaded", loadImages);
+document.addEventListener("DOMContentLoaded", carregarFotos)
