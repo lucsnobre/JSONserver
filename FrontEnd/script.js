@@ -35,22 +35,37 @@ function renderImages() {
 }
 
 function updateCarousel() {
-  const offset = -index * 100;
+  const items = document.querySelectorAll('.carousel-item');
+  items.forEach((item, i) => {
+    item.classList.remove('active');
+    if (i === index) {
+      item.classList.add('active');
+    }
+  });
+  
+  // Centralizar o item ativo
+  const offset = -index * 33.333; // 33.333% width per item
   track.style.transform = `translateX(${offset}%)`;
 }
 
 function showPrev() {
   if (index > 0) {
     index--;
-    updateCarousel();
+  } else {
+    // Loop infinito: vai para a última imagem
+    index = images.length - 1;
   }
+  updateCarousel();
 }
 
 function showNext() {
   if (index < images.length - 1) {
     index++;
-    updateCarousel();
+  } else {
+    // Loop infinito: volta para a primeira imagem
+    index = 0;
   }
+  updateCarousel();
 }
 
 prevBtn.addEventListener("click", showPrev);

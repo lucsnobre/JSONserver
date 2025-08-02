@@ -1,31 +1,31 @@
 {
     "fotos": [
       {   "id": 1, 
-          "legenda": "bebedouro da", 
+          "legenda": "Bebedouro da eletro", 
           "imagem": "https://i.postimg.cc/02fgsWPd/IMG-20250731-085638616.jpg", 
           "data": "31/07/2025" 
       },
       { 
           "id": 2, 
-          "legenda": "espaço que ficamos para conversar depois do almoço",
+          "legenda": "Espaço que ficamos para conversar depois do almoço",
           "imagem": "https://i.postimg.cc/7ZspC5C5/IMG-20250731-085949746-HDR.jpg", 
           "data": "31/07/2025" 
       },
       { 
           "id": 3, 
-          "legenda": "biblioteca que ficavamos pra conversar depois do almoço",
+          "legenda": "Biblioteca que ficavamos pra conversar depois do almoço",
           "imagem": "https://i.postimg.cc/QxsLvGGd/IMG-20250731-090731908.jpg", 
           "data": "31/07/2025" 
       },
       { 
           "id": 4, 
-          "legenda": "canteiro que meu amigo foi picado por um escorpião",
+          "legenda": "Canteiro que meu amigo foi picado por um escorpião",
           "imagem": "https://i.postimg.cc/mrPK7TM8/IMG-20250731-090214406.jpg", 
           "data": "31/07/2025" 
       },
       { 
           "id": 5, 
-          "legenda": "quadra da escola",
+          "legenda": "Quadra da escola",
           "imagem": "https://i.postimg.cc/x1TwTvdr/IMG-20250731-090243285.jpg", 
           "data": "31/07/2025" 
       }
