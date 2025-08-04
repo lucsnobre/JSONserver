@@ -12,42 +12,13 @@
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/Status-Ativo-brightgreen?style=for-the-badge)](#)
-[![Versão](https://img.shields.io/badge/Versão-1.0.0-blue?style=for-the-badge)](#)
-[![Licença](https://img.shields.io/badge/Licença-MIT-yellow?style=for-the-badge)](#)
-
 </div>
 
 ---
 
 ## ✨ Sobre o Projeto
 
-O **Carrossel JSON Server** é uma aplicação web moderna que oferece uma experiência visual única para navegação de fotos. Desenvolvido com foco na estética **Frutiger Aero**, combina elementos translúcidos, paleta de cores neutra e animações suaves para criar uma interface profissional e imersiva.
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎨 **Design Moderno**
-- Interface com estética Frutiger Aero
-- Elementos translúcidos e efeitos de vidro
-- Paleta de cores neutra e escura
-- Tipografia moderna (Inter + JetBrains Mono)
-
-</td>
-<td width="50%">
-
-### ⚡ **Funcionalidades**
-- Carrossel horizontal com fotos laterais visíveis
-- Loop infinito de navegação
-- Legendas animadas e estilizadas
-- Responsivo para dispositivos móveis
-
-</td>
-</tr>
-</table>
-
----
+O **Projeto Carrossel JSON Server** é uma aplicação web que oferece a navegação de fotos tiradas na escola técnica SENAI Jandira.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -102,22 +73,6 @@ O **Carrossel JSON Server** é uma aplicação web moderna que oferece uma exper
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```
-ProjetoJSONserver/
-├── 📂 API/
-│   └── 📄 db.json              # Banco de dados das fotos
-├── 📂 FrontEnd/
-│   ├── 📄 index.html           # Estrutura HTML
-│   ├── 📄 style.css            # Estilos e animações
-│   └── 📄 script.js            # Lógica JavaScript
-├── 📄 package.json             # Configurações do projeto
-└── 📄 README.md               # Documentação
-```
-
----
-
 ## 🎯 Funcionalidades Detalhadas
 
 <div align="center">
@@ -132,73 +87,4 @@ ProjetoJSONserver/
 | **Efeitos Translúcidos** | Elementos com backdrop-filter | ✅ |
 
 </div>
-
----
-
-## 🎨 Paleta de Cores
-
-<div align="center">
-
-| Cor | Hex | Uso |
-|:---:|:---:|:---:|
-| ![#0a0a0a](https://via.placeholder.com/20/0a0a0a/0a0a0a.png) | `#0a0a0a` | Background Principal |
-| ![#1a1a1a](https://via.placeholder.com/20/1a1a1a/1a1a1a.png) | `#1a1a1a` | Background Secundário |
-| ![#e8e8e8](https://via.placeholder.com/20/e8e8e8/e8e8e8.png) | `#e8e8e8` | Texto Principal |
-| ![#a8a8a8](https://via.placeholder.com/20/a8a8a8/a8a8a8.png) | `#a8a8a8` | Texto Secundário |
-| ![#c8c8d0](https://via.placeholder.com/20/c8c8d0/c8c8d0.png) | `#c8c8d0` | Texto Accent |
-
-</div>
-
----
-
-## 📸 Capturas de Tela
-
-> **Substitua esta seção pela imagem real do seu projeto**
-
-<div align="center">
-
-### Desktop
-<img src="https://via.placeholder.com/600x300/1a1a1a/e8e8e8?text=Desktop+View" alt="Visualização Desktop" width="600" />
-
-### Mobile
-<img src="https://via.placeholder.com/300x500/1a1a1a/e8e8e8?text=Mobile+View" alt="Visualização Mobile" width="300" />
-
-</div>
-
----
-
-## 🤝 Contribuição
-
-<div align="center">
-
-Contribuições são sempre bem-vindas!
-
-[![Contribuir](https://img.shields.io/badge/Contribuir-Clique_Aqui-brightgreen?style=for-the-badge)](#)
-
-</div>
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
----
-
-## 📄 Licença
-
-<div align="center">
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-<p align="center">
-  <strong>Desenvolvido com ❤️ para uma experiência visual única</strong>
-</p>
-
-<p align="center">
-  <sub>Feito por [Seu Nome] • © 2025</sub>
-</p>
-
 </div>
